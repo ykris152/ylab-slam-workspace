@@ -29,7 +29,7 @@ Connect with the correct order:
 2. Launch the teleoperation node
 3. Drive the robot around, and check the map generated on rviz
 4. Run the following code to save the map
-<code> rosrun map_server map_saver -f {name of the map}
+<code> rosrun map_server map_saver -f {name of the map}</code>
 
 # Navigation
 ## Make sure you are using the correct map file.
