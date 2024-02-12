@@ -15,21 +15,21 @@ http://wiki.ros.org/melodic/Installation/Ubuntu
 Connect with the correct order:
 1. Robot
 2. URG Sensor / RPLIDAR
-3. <code> sudo chmod 666 /dev/tty* </code>
+3. <code>sudo chmod 666 /dev/tty*</code>
 
 # Robot with teleoperation
 ## Launching Robot driver
-<code> roslaunch semi_navigation driver.launch </code>
+<code>roslaunch semi_navigation driver.launch</code>
 
 ## Teleoperation node
-<code> rosrun teleop_twist_keyboard teleop_twist_keyboard.py </code>
+<code>rosrun teleop_twist_keyboard teleop_twist_keyboard.py</code>
 
 # Gmapping
-1. <code> roslaunch semi_navigation all_gmapping.launch </code>
+1. <code>roslaunch semi_navigation all_gmapping.launch</code>
 2. Launch the teleoperation node
 3. Drive the robot around, and check the map generated on rviz
 4. Run the following code to save the map
-<code> rosrun map_server map_saver -f {name of the map}</code>
+<code>rosrun map_server map_saver -f {name of the map}</code>
 
 # Navigation
 ## Make sure you are using the correct map file.
@@ -38,7 +38,7 @@ Connect with the correct order:
 3. change <code>args="$(find semi_navigation)/maps/.yaml"</code> to <code>args="$(find semi_navigation)/maps/{name of the map}.yaml"</code>
 
 ## Running Navigation
-1. <code> roslaunch semi_navigation all_navigation.launch </code>
+1. <code>roslaunch semi_navigation all_navigation.launch</code>
 2. Open rviz window, Click 2D pose estimate to give the robot's initial location
 3. Click 2D Nav Goal to send a target position.
 
