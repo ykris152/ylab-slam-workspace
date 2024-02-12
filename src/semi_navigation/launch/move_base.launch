@@ -1,0 +1,17 @@
+<launch>
+  
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+	<rosparam file="$(find semi_navigation)/config/move_base.yaml" command="load" />
+	<rosparam file="$(find semi_navigation)/config/costmap_common.yaml" command="load" ns="global_costmap" />
+	<rosparam file="$(find semi_navigation)/config/costmap_common.yaml" command="load" ns="local_costmap" />
+	<rosparam file="$(find semi_navigation)/config/costmap_local.yaml" command="load" />
+	<rosparam file="$(find semi_navigation)/config/costmap_global.yaml" command="load" />
+	<rosparam file="$(find semi_navigation)/config/planner_local.yaml" command="load" />
+	<remap from="/cmd_vel" to="/ypspur_ros/cmd_vel"/>
+    <!--param name="base_global_planner" value="navfn/NavfnROS"/-->
+    <!--param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS"/-->
+        <!--param name="DWAPlannerROS/min_vel_x" value="0.0"/-->
+
+    </node>
+
+</launch>

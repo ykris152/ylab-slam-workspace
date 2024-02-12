@@ -1,0 +1,8 @@
+<launch>
+    <include file="$(find semi_navigation)/launch/driver.launch"/>
+    <include file="$(find semi_navigation)/launch/urg_lidar.launch"/>
+    <include file="$(find semi_navigation)/launch/map_server.launch"/>
+    <include file="$(find semi_navigation)/launch/amcl.launch"/>
+    <include file="$(find semi_navigation)/launch/move_base.launch"/>
+    <include file="$(find semi_navigation)/launch/rviz.launch"/>
+</launch>
