@@ -1,5 +1,6 @@
 # ylab-slam-workspace
-base files for ylab mobile robot
+This repo is the base files for ylab mobile robot
+Which includes packages for Moving the robot, Teleoperation, Gmapping, Navigation
 
 # Install ROS-Melodic
 http://wiki.ros.org/melodic/Installation/Ubuntu
