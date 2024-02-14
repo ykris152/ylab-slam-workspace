@@ -8,9 +8,11 @@ http://wiki.ros.org/melodic/Installation/Ubuntu
 # Setting up this workspace
 1. Verify that you have Ubuntu 18.0 with ROS Melodic installed.
 2. <code>git clone https://github.com/ykris152/ylab-slam-workspace.git</code>
-3. cd ~/ylab-slam-workspace
-4. catkin_make
-5. echo "source ~/ylab-slam-workspace/devel/setup.bash" >> ~/.bashrc
+3. <code>cd ~/ylab-slam-workspace</code>
+4. <code>sudo apt-get install libsdl-image1.2-dev</code>
+5. <code>sudo apt-get install libsdl-dev</code>
+4. <code>catkin_make</code>
+5. <code>echo "source ~/ylab-slam-workspace/devel/setup.bash" >> ~/.bashrc</code>
 
 # Connecting the robot
 Connect with the correct order:
