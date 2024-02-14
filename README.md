@@ -11,8 +11,8 @@ http://wiki.ros.org/melodic/Installation/Ubuntu
 3. <code>cd ~/ylab-slam-workspace</code>
 4. <code>sudo apt-get install libsdl-image1.2-dev</code>
 5. <code>sudo apt-get install libsdl-dev</code>
-4. <code>catkin_make</code>
-5. <code>echo "source ~/ylab-slam-workspace/devel/setup.bash" >> ~/.bashrc</code>
+6. <code>catkin_make</code>
+7. <code>echo "source ~/ylab-slam-workspace/devel/setup.bash" >> ~/.bashrc</code>
 
 # Connecting the robot
 Connect with the correct order:
@@ -36,8 +36,8 @@ Connect with the correct order:
 
 # Navigation
 ## Make sure you are using the correct map file.
-1. Copy the <code>{name of the map}.pgm</code> and <code>{name of the map}.yaml</code> to <code>ylab-slam-workspace/src/semi_navigation/maps</code>
-2. Edit <code>ylab-slam-workspace/src/semi_navigation/launch/map_server.launch</code>
+1. Copy the <code>{name of the map}.pgm</code> and <code>{name of the map}.yaml</code> to <code>~/ylab-slam-workspace/src/semi_navigation/maps</code>
+2. Edit <code>~/ylab-slam-workspace/src/semi_navigation/launch/map_server.launch</code>
 3. change <code>args="$(find semi_navigation)/maps/.yaml"</code> to <code>args="$(find semi_navigation)/maps/{name of the map}.yaml"</code>
 
 ## Running Navigation
