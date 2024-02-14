@@ -1,0 +1,9 @@
+<launch>
+    <arg name="default_port" default="/dev/serial/by-id/usb-T-frog_project_T-frog_Driver-if00" />
+    <arg name="default_param" default="$(find ypspur_launch)/param/icart-test.param" />
+
+    <node pkg="ypspur_ros" type="ypspur_ros" name="ypspur_ros">
+        <param name="port" value="$(arg default_port)" />
+        <param name="param_file" value="$(arg default_param)" />
+    </node>
+</launch>
