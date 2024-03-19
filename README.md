@@ -9,7 +9,7 @@ http://wiki.ros.org/melodic/Installation/Ubuntu
 1. Verify that you have Ubuntu 18.0 with ROS Melodic installed.
 2. <code>git clone https://github.com/ykris152/ylab-slam-workspace.git</code>
 3. <code>cd ~/ylab-slam-workspace</code>
-4. <code>sudo apt-get install libsdl-image1.2-dev libsdl-dev ros-melodic-ypspur-ros ros-melodic-laser-proc ros-melodic-urg-c ros-melodic-gmapping</code>
+4. <code>sudo apt-get install libsdl-image1.2-dev libsdl-dev ros-melodic-ypspur-ros ros-melodic-laser-proc ros-melodic-urg-c ros-melodic-gmapping ros-melodic-move-base-msgs ros-melodic-tf2-sensor-msgs</code>
 5. <code>catkin_make</code>
 6. <code>echo "source ~/ylab-slam-workspace/devel/setup.bash" >> ~/.bashrc</code>
 
